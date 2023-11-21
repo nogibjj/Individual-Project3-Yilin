@@ -53,6 +53,8 @@ else:
     # Save the DataFrame as a new Delta table
     df_entry_level.write.format("delta").mode("overwrite").option("path", table_path).saveAsTable("salaries_entry_level")
 ```
+> Check the new table in delta lake
+![](Results/newtable.png)
 ### 3. Query the transformed data
 
 > Average entry-level salary by country
